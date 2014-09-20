@@ -41,9 +41,9 @@
     var circleStyle = {
         stroke: true,
         color: "#03f",
-        weight: 3,
-        opacity: 0.5,
-        fillOpacity: 0.15,
+        weight: 0,
+        opacity: 0,
+        fillOpacity: 0,
         fillColor: "#03f",
         clickable: false
     };
