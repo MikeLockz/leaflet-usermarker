@@ -60,7 +60,6 @@
             options = L.Util.setOptions(this, options);
             
             this.setPulsing(this.options.pulsing);
-            this._accMarker = L.circle(latlng, this.options.accuracy, this.options.circleOpts);
         
             // call super
             L.Marker.prototype.initialize.call(this, latlng, this.options);
