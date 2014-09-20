@@ -41,9 +41,9 @@
     var circleStyle = {
         stroke: true,
         color: "#03f",
-        weight: 3,
-        opacity: 0.5,
-        fillOpacity: 0.15,
+        weight: 0,
+        opacity: 0,
+        fillOpacity: 0,
         fillColor: "#03f",
         clickable: false
     };
@@ -63,6 +63,7 @@
         
             // call super
             L.Marker.prototype.initialize.call(this, latlng, this.options);
+            this._accMarker = L.circle(latlng, 0, this.options.circleOpts);
         
             this.on("move", function() {
                 this._accMarker.setLatLng(this.getLatLng());
